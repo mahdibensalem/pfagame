@@ -15,6 +15,7 @@ public class mvtSphere : MonoBehaviour
     void Start() 
     {
         rb = GetComponent<Rigidbody>();
+        
     }
     void FixedUpdate()
     { 
@@ -36,6 +37,7 @@ public class mvtSphere : MonoBehaviour
         /************** if dead restart place  *************************/
         if (dead)
         {
+          
             transform.position = checkpoint_manager.lastpos ;
             dead = false;
 
@@ -61,10 +63,11 @@ public class mvtSphere : MonoBehaviour
         if (other.gameObject.tag == "obstacle")
         {
             dead = true;
+           
+           
         }
+       
     }
-
-
-
+    
 
 }
