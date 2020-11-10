@@ -22,6 +22,7 @@ public class fatfet : MonoBehaviour
             Instantiate(playerdestroy, player.transform.position, transform.rotation);
             scriptphere.dead = true;
 
+
         }
 
 
