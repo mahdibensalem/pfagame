@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class trompoline : MonoBehaviour
 {
+    public GameObject player;
     public Rigidbody rbball;
     void Start()
     {
-        rbball = GameObject.Find("player").GetComponent<Rigidbody>();
+        rbball = player.GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)

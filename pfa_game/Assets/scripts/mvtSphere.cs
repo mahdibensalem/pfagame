@@ -35,9 +35,9 @@ public class mvtSphere : MonoBehaviour
             speed =50f;
         }
         /************** if dead restart place  *************************/
-        if (dead)
+        if (dead==true)
         {
-          
+            
             transform.position = checkpoint_manager.lastpos ;
             dead = false;
 
